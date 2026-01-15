@@ -2219,7 +2219,9 @@ rtems_debugger_target_thread_stepping(rtems_debugger_thread* thread)
 }
 
 int
-rtems_debugger_target_exception_to_signal(CPU_Exception_frame* frame)
+rtems_debugger_target_exception_to_signal(
+    CPU_Exception_frame* frame __attribute__((unused))
+)
 {
   int sig = RTEMS_DEBUGGER_SIGNAL_HUP;
 #if defined(ARM_MULTILIB_ARCH_V4)

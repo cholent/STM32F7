@@ -1,0 +1,28 @@
+SPDX-License-Identifier: CC-BY-SA-4.0 OR BSD-2-Clause
+arch: arm
+bsp: stm32f7
+build-type: bsp
+cflags: []
+copyrights:
+- Copyright (C) 2020 embedded brains GmbH & Co. KG
+cppflags: []
+enabled-by: true
+family: stm32f7
+includes: 
+- optf7xxxx 
+- optoschse 
+- opthclk 
+- optpclk1 
+- optpclk2 
+- optsysclk 
+- optusartbaud
+install: []
+links:
+- role: build-dependency
+  uid: ../../opto2
+- role: build-dependency
+  uid: ../../tstsmallmem
+- role: build-dependency
+  uid: grp
+source: []
+type: build
