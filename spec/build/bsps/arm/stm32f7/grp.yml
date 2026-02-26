@@ -19,10 +19,6 @@ links:
 - role: build-dependency
   uid: obj
 - role: build-dependency
-  uid: opteni2c1
-- role: build-dependency
-  uid: opteni2c2
-- role: build-dependency
   uid: optenuart4
 - role: build-dependency
   uid: optenuart5

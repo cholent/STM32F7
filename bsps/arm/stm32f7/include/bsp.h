@@ -2,7 +2,7 @@
 
 /**
  * @file
- * @ingroup RTEMSBSPsARMSTM32F4
+ * @ingroup RTEMSBSPsARMSTM32F7
  * @brief Global BSP definitions.
  */
 
@@ -45,7 +45,6 @@
  */
 
 #include <bspopts.h>
-#include <bsp/bsp_f7_clocks.h> 
 #include <bsp/default-initial-extension.h>
 
 #include <rtems.h>

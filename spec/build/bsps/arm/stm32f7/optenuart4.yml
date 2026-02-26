@@ -7,7 +7,7 @@ copyrights:
 - Copyright (C) 2020 embedded brains GmbH & Co. KG
 default:
 - enabled-by: arm/stm32f7 
-  value: true
+  value: false
 - enabled-by: true
   value: false
 description: |

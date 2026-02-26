@@ -34,7 +34,6 @@
 #include <bsp/usart.h>
 #include <bsp/stm32f7.h>
 #include <termios.h>
-#include <string.h>
 
 static volatile stm32f7_usart *usart_get_regs(const console_tbl *ct)
 {

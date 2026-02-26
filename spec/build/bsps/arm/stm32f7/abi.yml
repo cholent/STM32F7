@@ -13,12 +13,6 @@ default:
   - -mthumb
   - -mfloat-abi=hard
   - -mfpu=fpv5-sp-d16
-- enabled-by: true
-  value:
-  - -mcpu=cortex-m4
-  - -mthumb
-  - -mfloat-abi=hard
-  - -mfpu=auto
 description: |
   ABI flags
 enabled-by: true

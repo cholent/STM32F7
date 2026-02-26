@@ -162,7 +162,6 @@ typedef enum
 
 #include <bsp/stm32f7xxxx_gpio.h>
 #define STM32F7_GPIO_BASE (STM32F7_BASE + 0x40020000)
-//#define STM32F7_GPIO(i) ((volatile stm32f7_gpio *) (STM32F7_GPIO_BASE) + (i))
 #define STM32F7_GPIO(i) ((volatile stm32f7_gpio *) (STM32F7_GPIO_BASE + ((i) * 0x400))) //fixed offset of 0x400 byte
 
 #define STM32F7_GPIOA_BASE STM32F7_GPIO_BASE      // 0x40020000
@@ -179,19 +178,6 @@ typedef enum
 
 #include <bsp/stm32f7xxxx_rcc.h>
 #define STM32F7_RCC ((volatile stm32f7_rcc *) (STM32F7_AHB1_BASE + 0x3800))
-
-/** @} */
-
-#include <bsp/stm32_i2c.h>
-
-/**
- * @name STM32 I2C
- * @{
- */
-
-#define STM32F7_I2C3 ((volatile stm32f7_i2c *) (STM32F7_BASE + 0x40005C00))
-#define STM32F7_I2C2 ((volatile stm32f7_i2c *) (STM32F7_BASE + 0x40005800))
-#define STM32F7_I2C1 ((volatile stm32f7_i2c *) (STM32F7_BASE + 0x40005400))
 
 /** @} */
 

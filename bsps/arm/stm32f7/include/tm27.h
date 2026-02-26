@@ -3,7 +3,7 @@
 /**
  * @file
  *
- * @ingroup RTEMSBSPsARMSTM32F4
+ * @ingroup RTEMSBSPsARMSTM32F7
  *
  * @brief This header file includes the generic tm27 support implementation.
  */

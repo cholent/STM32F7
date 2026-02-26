@@ -304,10 +304,8 @@ static rtems_status_code set_system_clk(
 void bsp_start( void )
 {
   SCB->CPACR |= ((3UL << 10*2)|(3UL << 11*2)); // handling floating points
+  
   init_main_osc();
-
-  //SCB_EnableICache();  
-  //SCB_EnableDCache();
 
   stm32f7_gpio_set_config_array( &stm32f7_start_config_gpio[ 0 ] );
 
