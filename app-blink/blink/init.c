@@ -1,0 +1,17 @@
+#include <rtems.h>
+
+rtems_task Init(rtems_task_argument argument);
+
+#define CONFIGURE_APPLICATION_NEEDS_CLOCK_DRIVER
+#define CONFIGURE_APPLICATION_NEEDS_CONSOLE_DRIVER
+
+#define CONFIGURE_MAXIMUM_TASKS             5
+#define CONFIGURE_RTEMS_INIT_TASKS_TABLE
+#define CONFIGURE_INIT_TASK_STACK_SIZE      RTEMS_MINIMUM_STACK_SIZE
+
+
+#define CONFIGURE_UNLIMITED_OBJECTS
+#define CONFIGURE_UNIFIED_WORK_AREAS
+
+#define CONFIGURE_INIT
+#include <rtems/confdefs.h>
